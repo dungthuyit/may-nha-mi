@@ -5,7 +5,6 @@
 #include "display_settings.h"
 #include "photo_album.h"
 
-// TFT wiring: SCL18, SDA23, CS27, DC25, RST26. VDD 3V3, BLK GPIO32 (no VDD bridge).
 Adafruit_ST7735 tft(27,25,26);
 GFXcanvas16 frame(128,160);
 // Reuse the same framebuffer for native landscape; photos retain their aspect ratio.

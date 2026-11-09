@@ -1,6 +1,5 @@
 #pragma once
 #include <Preferences.h>
-// Dedicated PWM backlight input: remove any VDD/BLK bridge before connecting GPIO32.
 constexpr int BACKLIGHT_PIN=32, BACKLIGHT_CHANNEL=7;
 int displayBrightness=80, displayNightBrightness=20;
 String displayMode="auto";

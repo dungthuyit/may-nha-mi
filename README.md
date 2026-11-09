@@ -28,3 +28,6 @@ Dự báo khu vực: [Open-Meteo](https://open-meteo.com/), CC BY 4.0. Ước l�
 ## Cập nhật Android
 
 Tải APK từ Releases, cài đè bản cũ. Từ bản 1.14, mở Thiết bị → Cập nhật ứng dụng. Android vẫn yêu cầu xác nhận cài đặt. Không cần cấp key trạm cho GitHub.
+
+
+Dự án này mình làm cho vui thôi mà cũng ngót nghét 1 năm ...

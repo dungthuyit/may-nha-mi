@@ -3,6 +3,13 @@
 Trạm thời tiết ESP32 với SHT4x, BMP280 và màn hình ST7735S 1.8 inch.
 
 Repo này chỉ chứa mã ESP32 và web chạy trên ESP32. Mã Android và máy chủ cloud không được công khai. APK Android được phát hành riêng trong Releases.
+# may-nha-mi
+
+Mây nhà Mi — firmware ESP32 cho trạm thời tiết
+
+SHT4x, BMP280 và màn hình ST7735S 1.8 inch.
+
+Repo này chỉ chứa mã ESP32 và web chạy trên ESP32. Mã Android và máy chủ cloud không công khai. APK Android được phát hành riêng trong Releases.
 
 ## Build bằng PlatformIO
 
@@ -26,3 +33,6 @@ Dự báo khu vực: [Open-Meteo](https://open-meteo.com/), CC BY 4.0. Ước l�
 ## Cập nhật Android
 
 Tải APK từ Releases, cài đè bản cũ. Từ bản 1.14, mở Thiết bị → Cập nhật ứng dụng. Android vẫn yêu cầu xác nhận cài đặt. Không cần cấp key trạm cho GitHub.
+
+
+Dự án này mình làm cho vui thôi mà cũng ngót nghét 1 năm ...

@@ -36,3 +36,4 @@ Tải APK từ Releases, cài đè bản cũ. Từ bản 1.14, mở Thiết bị
 
 
 Dự án này mình làm cho vui thôi mà cũng ngót nghét 1 năm ...
+may có chatgpt hỗ trợ :))

@@ -4,7 +4,7 @@ Mây nhà Mi — firmware ESP32 cho trạm thời tiết
 
 SHT4x, BMP280 và màn hình ST7735S 1.8 inch.
 
-Repo này chỉ chứa mã ESP32 và web chạy trên ESP32. Mã Android và máy chủ cloud không được công khai. APK Android được phát hành riêng trong Releases.
+Repo này chỉ chứa mã ESP32 và web chạy trên ESP32. Mã Android và máy chủ cloud không công khai. APK Android được phát hành riêng trong Releases.
 
 ## Build bằng PlatformIO
 

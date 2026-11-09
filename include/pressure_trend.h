@@ -1,8 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <math.h>
-// Experimental pressure-only outlook, not a calibrated rain probability model.
-// No absolute sea-level thresholds: station altitude is unknown.
+
 class PressureTrend {
   struct Point { uint32_t ms; float pressure; } points[181]{};
   int count=0, head=0, bucketCount=0;

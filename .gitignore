@@ -1,0 +1,9 @@
+.pio/
+.vscode/
+include/secrets.h
+include/cloud_secrets.h
+include/maintenance_secret.h
+*.bin
+*.apk
+*.keystore
+*.jks

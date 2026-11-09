@@ -7,7 +7,6 @@
 
 Adafruit_ST7735 tft(27,25,26);
 GFXcanvas16 frame(128,160);
-// Reuse the same framebuffer for native landscape; photos retain their aspect ratio.
 void presentFrame(){
   if(!frame.getBuffer())return;
   static int applied=-1;

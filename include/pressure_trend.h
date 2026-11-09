@@ -1,6 +1,8 @@
 #pragma once
 #include <stdint.h>
 #include <math.h>
+// Experimental pressure-only outlook, not a calibrated rain probability model.
+// No absolute sea-level thresholds: station altitude is unknown.
 
 class PressureTrend {
   struct Point { uint32_t ms; float pressure; } points[181]{};
@@ -12,6 +14,7 @@ public:
   void reset(){count=0;head=0;bucketCount=0;bucketSum=0;seen=false;}
   void add(uint32_t now,float value){
     if(!isfinite(value)||value<300||value>1100)return;
+    // Gaps and sudden steps can indicate relocation or sensor restart.
     if(seen && (now-lastGoodMs>300000 || fabsf(value-lastPressure)>2.0f))reset();
     if(!seen){bucketMs=now;seen=true;}
     lastGoodMs=now;lastPressure=value;bucketSum+=value;bucketCount++;
@@ -23,6 +26,7 @@ public:
   int size() const {return count;}
   uint32_t pointMs(int i) const {return points[(head-count+i+181)%181].ms;}
   float pointPressure(int i) const {return points[(head-count+i+181)%181].pressure;}
+  // Restored UTC points are mapped to wrapping millis; only a continuous recent tail is usable.
   void restorePoint(uint32_t stamp,float value){
     if(!isfinite(value)||value<300||value>1100)return;
     if(count){auto p=points[(head+180)%181];if(stamp-p.ms>300000||fabsf(value-p.pressure)>2.0f)reset();}

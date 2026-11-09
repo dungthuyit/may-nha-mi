@@ -1,5 +1,6 @@
 #pragma once
 #include <LittleFS.h>
+// Fixed-size checksum checked ring: 7 days at five-minute intervals (~48 KiB).
 constexpr uint32_t HISTORY_CAP=2016;
 struct HistoryPoint {uint32_t seq,epoch;float t,h,p;uint32_t crc;};
 uint32_t historySeq=0,historyAck=0,historyLastEpoch=0;
